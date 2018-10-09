@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class CoolServlet extends HttpServlet {
+public class Servlet extends HttpServlet {
 
     private String name;
     private String title;

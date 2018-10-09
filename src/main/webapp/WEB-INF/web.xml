@@ -6,12 +6,12 @@
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     <servlet>
-        <servlet-name>CoolServlet</servlet-name>
-        <servlet-class>com.epam.lab.CoolServlet</servlet-class>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>com.epam.lab.Servlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>CoolServlet</servlet-name>
+        <servlet-name>Servlet</servlet-name>
         <url-pattern>/main</url-pattern>
     </servlet-mapping>
 </web-app>
