@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
@@ -44,6 +46,14 @@
    <input type="button" value="Post" id="postState"/>
    <input type="button" value="Delete" id="deleteState"/>
 
-   <div id="output"></div>
+   <div id="output">
+        ${defaultText}
+   </div>
+
+   <c:forEach var="buttonAvaliable" items='${buttons}'>
+       <c:out value="${buttonAvaliable}"/><p/>
+   </c:forEach>
+   <c:set var="sign" value="made by Petr Kozlov"/>
+   <c:out value='${sign}'/>
 </body>
 </html>
